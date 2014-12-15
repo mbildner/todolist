@@ -66,3 +66,5 @@ The controller also exposes the ability to inspect its model, and to add items, 
 
 	listForm.submit(); // boom!
 	```
+
+This repo also includes a tiny testing server written with expressjs to confirm that the component submits items as an array. Test by running: `$ node test_server.js` and going to `localhost:8000`.
