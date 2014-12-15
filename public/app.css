@@ -1,0 +1,46 @@
+body {
+	background-color: lightblue;
+	text-align: center;
+}
+
+#mountpoint {
+	margin: 0 auto;
+	width: 50%;
+}
+
+.add-input {
+	width: 50%;
+	margin-left: 25%;
+	display: block;
+}
+
+.add-button {
+	width: 20%;
+}
+
+.submit-button {
+	width: 20%;
+}
+
+.todo-item {
+	text-align: center;
+}
+
+
+
+/*input {
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom-color: grey;
+	border-bottom-style: groove;
+	width: 50%;
+}
+*/
+
+/*.center {
+	width: 800px;
+	margin: 0 auto;
+	background-color: rgb(255, 100, 100);
+}
+*/
