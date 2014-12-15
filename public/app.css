@@ -25,22 +25,3 @@ body {
 .todo-item {
 	text-align: center;
 }
-
-
-
-/*input {
-	border-left: none;
-	border-right: none;
-	border-top: none;
-	border-bottom-color: grey;
-	border-bottom-style: groove;
-	width: 50%;
-}
-*/
-
-/*.center {
-	width: 800px;
-	margin: 0 auto;
-	background-color: rgb(255, 100, 100);
-}
-*/

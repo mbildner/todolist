@@ -20,7 +20,6 @@ API
 
 Example:
 
-	```JavaScript
 	var listForm = mhbGetForm({
 		root: document.getElementById('mountpoint'),
 		action: '/test/post',
@@ -29,13 +28,12 @@ Example:
 			return text.length > 0;
 		}
 	});
-	```
+
 
 `mhbGetForm` returns a controller object, which can set (or change) these values after the form has been initialized.
 
 Example:
 
-	```JavaScript
 	var listForm = mhbGetForm({
 		root: document.getElementById('mountpoint')
 	});
@@ -45,11 +43,10 @@ Example:
 	listForm.validate(function (text) {
 		return /cool stuff/.test(text);
 	});
-	```
+
 
 The controller also exposes the ability to inspect its model, and to add items, and to submit the list programmatically.
 
-	```JavaScript
 	var listForm = mhbGetForm({
 		root: document.getElementById('mountpoint'),
 		action: '/test/post',
@@ -65,4 +62,6 @@ The controller also exposes the ability to inspect its model, and to add items, 
 	listForm.items(); // ['and another', 'cool new item'];
 
 	listForm.submit(); // boom!
-	```
+
+
+This repo also includes a tiny testing server written with expressjs to confirm that the component submits items as an array. Test by running: `$ node test_server.js` and going to `localhost:8000`.
