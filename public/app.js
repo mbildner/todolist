@@ -152,11 +152,14 @@
 
 		// build return object
 		var controller = {};
-		controller.submit = function () { form.submit(); };
+		controller.submit = function () { updateHiddenInput(); form.submit(); };
 		controller.items = getStrippedItems;
 		controller.clear = clear;
 		controller.action = function (action) { form.action = action; };
 		controller.addItem = addItem;
+		controller.validate = function (validationFunc) {
+			validate = validationFunc;
+		};
 
 		return controller;
 
@@ -189,15 +192,3 @@
 
 
 })(document, window);
-
-var listForm = mhbGetForm({
-	root: document.getElementById('mountpoint'),
-	name: 'list_test_form',
-	action: '/test/get',
-	method: 'GET',
-	validate: function (text) {
-		return text.length > 0;
-	}
-});
-
-'moshe bildner and other words that should end up on this awesome list'.split(' ').forEach(listForm.addItem);

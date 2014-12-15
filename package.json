@@ -1,0 +1,23 @@
+{
+  "name": "todolist",
+  "version": "0.0.0",
+  "description": "tiny express app to validate that my todolist can submit data in the desired (array) format.",
+  "main": "test_server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mbildner/todolist.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mbildner/todolist/issues"
+  },
+  "homepage": "https://github.com/mbildner/todolist",
+  "dependencies": {
+    "body-parser": "^1.10.0",
+    "express": "^4.10.6"
+  }
+}

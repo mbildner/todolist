@@ -7,7 +7,16 @@
 
 	<div id="mountpoint"></div>
 
-
-	<script type="text/javascript" src="app.js"></script>
+	<script src="app.js"></script>
+	<script>
+		var listForm = mhbGetForm({
+			root: document.getElementById('mountpoint'),
+			action: '/test/post',
+			method: 'POST',
+			validate: function (text) {
+				return text.length > 0;
+			}
+		});
+	</script>
 </body>
 </html>
